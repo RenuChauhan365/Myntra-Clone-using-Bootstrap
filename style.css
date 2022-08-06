@@ -214,12 +214,15 @@ li a:hover {
     .deal-of-the-day-Card img{
         width: 260px;
     }
+    .stickers img{
+        width: 100px;
+    }
     .TopPics img{
         width: 260px;
       }
       .dealHeading h2{
         font-size:medium;
-      }
+      }y
 }
 @media only screen and (max-width: 520px) {
   .carousel-inner img {
@@ -235,6 +238,9 @@ li a:hover {
   .dealHeading h2{
     font-size:medium;
   }
+  .stickers img{
+    width: 100px;
+}
 }
 @media only screen and (max-width: 395px) {
     .dealHeading h2{
@@ -246,6 +252,9 @@ li a:hover {
     .TopPics img{
         width: 186px;
       }
+      .stickers img{
+        width: 100px;
+    }
   }
   @media only screen and (max-width: 376px) {
     .dealHeading h2{
@@ -256,6 +265,9 @@ li a:hover {
     }
     .TopPics img{
         width: 180px;
+    }
+    .stickers img{
+        width: 100px;
     }
   }
   @media only screen and (max-width: 361px) {
@@ -268,6 +280,9 @@ li a:hover {
     .TopPics img{
         width: 172px;
       }
+      .stickers img{
+        width: 100px;
+    }
   }
   @media only screen and (max-width: 300px) {
 .deal-of-the-day-Card img{
@@ -279,4 +294,7 @@ li a:hover {
   .dealHeading h2{
     font-size:medium;
   }
+  .stickers img{
+    width: 100px;
+}
   }
