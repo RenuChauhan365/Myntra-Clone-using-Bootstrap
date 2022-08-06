@@ -211,6 +211,13 @@ li a:hover {
       }
 }
 @media only screen and (max-width: 540px) {
+    .mobileApp h4{
+        font-size: medium;
+    }
+    .social_icon img{
+        width: 20px;
+        height: auto;
+    }
     .deal-of-the-day-Card img{
         width: 260px;
     }
@@ -225,6 +232,13 @@ li a:hover {
       }y
 }
 @media only screen and (max-width: 520px) {
+    .mobileApp h4{
+        font-size: medium;
+    }
+    .social_icon img{
+        width: 20px;
+        height: auto;
+    }
   .carousel-inner img {
     width: auto;
     height: 200px;
@@ -243,6 +257,13 @@ li a:hover {
 }
 }
 @media only screen and (max-width: 395px) {
+    .mobileApp h4{
+        font-size: medium;
+    }
+    .social_icon img{
+        width: 20px;
+        height: auto;
+    }
     .dealHeading h2{
         font-size:medium;
       }
@@ -257,6 +278,13 @@ li a:hover {
     }
   }
   @media only screen and (max-width: 376px) {
+    .mobileApp h4{
+        font-size: medium;
+    }
+    .social_icon img{
+        width: 20px;
+        height: auto;
+    }
     .dealHeading h2{
         font-size:medium;
       }
@@ -271,6 +299,13 @@ li a:hover {
     }
   }
   @media only screen and (max-width: 361px) {
+    .mobileApp h4{
+        font-size: medium;
+    }
+    .social_icon img{
+        width: 20px;
+        height: auto;
+    }
     .dealHeading h2{
         font-size:medium;
       }
@@ -285,6 +320,13 @@ li a:hover {
     }
   }
   @media only screen and (max-width: 300px) {
+    .mobileApp h4{
+        font-size: medium;
+    }
+    .social_icon img{
+        width: 20px;
+        height: auto;
+    }
 .deal-of-the-day-Card img{
     width: 250px;
 }
