@@ -159,8 +159,20 @@ li a:hover {
     width: 25px;
     margin-top: 15px;
   }
+  .deal-of-the-day-Card img {
+    width: 267px;
+  }
 }
-
+@media only screen and (max-width: 769px) {
+    .deal-of-the-day-Card img {
+        width: 248px;
+      }
+}
+@media only screen and (max-width: 540px) {
+    .deal-of-the-day-Card img{
+        width: 260px;
+    }
+}
 @media only screen and (max-width: 520px) {
   .carousel-inner img {
     width: auto;
@@ -170,3 +182,26 @@ li a:hover {
     width: 196px;
   }
 }
+@media only screen and (max-width: 395px) {
+    
+    .deal-of-the-day-Card img {
+      width: 186px;
+    }
+  }
+  @media only screen and (max-width: 376px) {
+    
+    .deal-of-the-day-Card img {
+      width: 180px;
+    }
+  }
+  @media only screen and (max-width: 361px) {
+    
+    .deal-of-the-day-Card img {
+      width: 172px;
+    }
+  }
+  @media only screen and (max-width: 300px) {
+.deal-of-the-day-Card img{
+    width: 250px;
+}
+  }
