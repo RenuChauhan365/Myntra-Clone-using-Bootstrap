@@ -110,11 +110,14 @@ li a:hover {
     padding: 30px 0px;
     color: white;
     background-color: black;
-    margin: 0 5px;
+    /* margin: 0 5px; */
 }
 .footer p{
     margin-bottom:.5px;
     color: white;
+}
+.footer p , h6{
+    margin-left:  5px;
 }
 .stickers img{
     width: 130px;
