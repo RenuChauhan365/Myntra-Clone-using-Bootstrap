@@ -2,7 +2,7 @@ body {
   padding: 0px;
   margin: 0px;
   font-family: "Trirong", serif;
-  background-color: #e1c5c5;
+  background-color: #f7f1f1;
 }
 .mobileHeader {
   display: none;
@@ -217,6 +217,9 @@ li a:hover {
     .TopPics img{
         width: 260px;
       }
+      .dealHeading h2{
+        font-size: small;
+      }
 }
 @media only screen and (max-width: 520px) {
   .carousel-inner img {
@@ -229,9 +232,14 @@ li a:hover {
   .TopPics img{
     width: 196px;
   }
+  .dealHeading h2{
+    font-size: small;
+  }
 }
 @media only screen and (max-width: 395px) {
-    
+    .dealHeading h2{
+        font-size: small;
+      }
     .deal-of-the-day-Card img {
       width: 186px;
     }
@@ -240,7 +248,9 @@ li a:hover {
       }
   }
   @media only screen and (max-width: 376px) {
-    
+    .dealHeading h2{
+        font-size: small;
+      }
     .deal-of-the-day-Card img {
       width: 180px;
     }
@@ -249,7 +259,9 @@ li a:hover {
     }
   }
   @media only screen and (max-width: 361px) {
-    
+    .dealHeading h2{
+        font-size: small;
+      }
     .deal-of-the-day-Card img {
       width: 172px;
     }
@@ -263,5 +275,8 @@ li a:hover {
 }
 .TopPics img{
     width: 250px;
+  }
+  .dealHeading h2{
+    font-size: small;
   }
   }
