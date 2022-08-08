@@ -139,15 +139,15 @@ li a:hover {
 }
 
 /* T- Shirt collection page style ==========> */
-.flex_all_data{
-  display: flex;
-  flex-direction: row;
-}
+
 .size_price_filtering{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 
+}
+.t_shirt_discription{
+  text-align: center;
 }
 .all-tshirt h6 , p , .t-shirt_price{
   margin-bottom: -2px;
@@ -157,18 +157,34 @@ li a:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   margin: 15px 5px;
 }
 
+.t-shirt_image{
+  position: relative;
+  width: auto;
+}
 .all-tshirt img{
   width: 200px;
   height: auto;
   margin-bottom: 10px;
   
 }
-.btn{
-  margin-left: -160px;
-  margin-top: 150px;
+#layer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: black;
+  background-color:transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-evenly;
+  opacity: 100%;
+  /* z-index: 10; */
 }
 
 /* CART STYLING =========> */
@@ -263,8 +279,21 @@ border-radius: 50px;
     text-decoration: none;
     color: black;
   }
+.all-tshirt{
+  display: flex;
+
+
+}
+
   .tshirt_items{
     margin-bottom: 24px;
+    /* display: flex;
+    flex-direction: row; */
+
+    /* display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; */
+
   }
   .profile_logo img {
     width: 20px;
