@@ -53,7 +53,8 @@ let jsondata = {data:[
 var all_data = '';
 
 jsondata.data.forEach((item , index)=>{
-  return all_data += `<div class="tshirt_items">
+  return all_data += `<div class="flex_all_data">
+  <div class="tshirt_items">
   <div class="t-shirt_image">
   
     <img 
@@ -77,6 +78,7 @@ jsondata.data.forEach((item , index)=>{
       <span style="color: red">(40% off)</span>
     </div>
   </div>
+  </data>
 `
 })
 

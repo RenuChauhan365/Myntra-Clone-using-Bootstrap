@@ -139,6 +139,10 @@ li a:hover {
 }
 
 /* T- Shirt collection page style ==========> */
+.flex_all_data{
+  display: flex;
+  flex-direction: row;
+}
 .size_price_filtering{
   display: flex;
   flex-direction: row;
