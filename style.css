@@ -36,7 +36,7 @@ nav {
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
-  margin-top: 13px;
+  margin-top: 10px;
   align-items: center;
 }
 li {
@@ -137,7 +137,82 @@ li a:hover {
     color: white;
     text-align: center;
 }
+
+/* T- Shirt collection page style ==========> */
+.size_price_filtering{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+.all-tshirt h6 , p , .t-shirt_price{
+  margin-bottom: -2px;
+}
+.all-tshirt {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 15px 5px;
+}
+
+.all-tshirt img{
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+  
+}
+.btn{
+  margin-left: -160px;
+  margin-top: 150px;
+}
+
+/* CART STYLING =========> */
+
+.cart_containner{
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-evenly; */
+
+}
+.t-shirt-image img{
+  margin: 20px 8px;
+  width: 250px;
+}
+.add_to_bag button{
+padding: 5px 10px;
+background-color: rgb(245, 93, 93);
+margin-top: 20px;
+border: none;
+margin-right: 5px;
+}
+/* .size button{
+padding: 5px;
+border-radius: 50px;
+} */
+
+.size button {
+  margin: 10px 5px 10px 0;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 25px;
+}
+
+.t-shirt_price span {
+  margin: 5px;
+}
+
+.flex_Cart_item{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 /* MEDIA QUARY =====> */
+
 
 @media only screen and (max-width: 825px) {
   .firstRow {
@@ -158,6 +233,7 @@ li a:hover {
     display: flex;
     flex-direction: row;
   }
+  
   .TopPics img {
     width: 100%;
     height: auto;
@@ -187,6 +263,9 @@ li a:hover {
     margin-left: 20px;
     text-decoration: none;
     color: black;
+  }
+  .tshirt_items{
+    margin-bottom: 24px;
   }
   .profile_logo img {
     width: 20px;
@@ -233,7 +312,7 @@ li a:hover {
       }
       .dealHeading h2{
         font-size:medium;
-      }y
+      }
 }
 @media only screen and (max-width: 520px) {
     .mobileApp h4{
