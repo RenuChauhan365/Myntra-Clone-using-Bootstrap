@@ -183,8 +183,14 @@ li a:hover {
   flex-direction: column;
   align-items: center;
   justify-content:space-evenly;
+  opacity: 0%;
+  z-index: 10;
+}
+
+#layer:hover{
+  background: rgba(211, 0, 0, 0.2);
   opacity: 100%;
-  /* z-index: 10; */
+  transition: 1s;
 }
 
 /* CART STYLING =========> */
@@ -229,7 +235,7 @@ border-radius: 50px;
 /* MEDIA QUARY =====> */
 
 
-@media only screen and (max-width: 825px) {
+@media only screen and (max-width: 950px) {
   .firstRow {
     display: flex;
     justify-content: center;
@@ -300,7 +306,7 @@ border-radius: 50px;
   }
   .bell img {
     width: 25px;
-    margin-top: 15px;
+    margin-top: 8px;
   }
   .deal-of-the-day-Card img {
     width: 267px;
@@ -365,6 +371,10 @@ border-radius: 50px;
   }
   .stickers img{
     width: 100px;
+
+}
+#layer{
+  opacity: 100%;
 }
 }
 @media only screen and (max-width: 395px) {
