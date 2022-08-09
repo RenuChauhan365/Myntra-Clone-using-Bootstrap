@@ -73,12 +73,12 @@
               </div>
             </li>
             <li>
-                <a class="nav-link" href="./cart.html">
-                    <div class="profile_logo me-4">
-                      <img src="./image/cart3.svg" alt="">
-                    <p>Cart</p>
-                    </div>
-                  </a>
+              <a class="nav-link" href="./cart.html">
+                <div class="profile_logo me-4">
+                  <img src="./image/cart3.svg" alt="" />
+                  <p>Cart</p>
+                </div>
+              </a>
             </li>
             <li>
               <div class="profile_logo me-4">
@@ -134,9 +134,35 @@
     </div>
 
     <main>
-        <div class="all_item">
-      <div class="cart_containner" id="cart_Box">
-        <!-- <div class="t-shirt-image">
+      <div class="all_item">
+        <div
+          style="
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            height: 50px;
+            background-color: rgb(222, 52, 100);
+            align-items: center;
+          "
+        >
+        <h3>Your Cart Item</h3>
+          <button
+            style="background-color: rgb(228, 70, 70);border: none; margin: 5px; padding: 8px 15px"
+            onclick="removeCartItems()"
+            id="remove_Item_from_cart_btn"
+            type="button"
+          >
+            Remove All Items
+          </button>
+        </div>
+        <din id="change_text" style="background-color: rgb(171, 171, 171); margin: 40px;text-align: center;" class="itemAvailiblityHeading">
+            <h1>No Items Availble !</h1>
+            <p>Please Add Items In Cart</p>
+        </din>
+        <div class="cart_containner" id="cart_Box">
+            
+          /*-
+          <!-- <div class="t-shirt-image">
           <img
             src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/18221376/2022/6/13/d3fb3918-3252-43fe-ada5-19551c455f621655116936553-Louis-Philippe-Sport-Men-Tshirts-2941655116936021-1.jpg"
             alt=""
@@ -179,15 +205,24 @@
             </button>
           </div>
         </div> -->
-    </div>
+        </div>
       </div>
       <script>
-
-
-
-        document.querySelector(".cart_containner").innerHTML = localStorage.getItem("myData");
-        // localStorage.clear();
-
+        // let removeBTN = document.getElementById('remove_Item_from_cart_btn');
+        document.querySelector(".cart_containner").innerHTML =
+          localStorage.getItem("myData");
+        //
+        function removeCartItems() {
+          localStorage.clear();
+          window.location.reload();
+        }
+        let hideText = document.getElementById('change_text');
+        let removeBTN = document.getElementById("remove_Item_from_cart_btn");
+        removeBTN.style.display = "none";
+        if (localStorage.length !== 0) {
+          removeBTN.style.display = "block";
+          hideText.style.display = "none";
+        }
       </script>
       <!-- ======>Modal for search <======= -->
 
@@ -239,7 +274,7 @@
       crossorigin="anonymous"
     ></script>
 
-     <footer>
+    <footer>
       <div class="footer">
         <div class="onlinShoping">
           <h6 style="font-weight: 800">ONLINE SHOPING</h6>
@@ -308,6 +343,5 @@
         // console.log(d.getFullYear());
       </script>
     </footer>
-    
   </body>
 </html>
