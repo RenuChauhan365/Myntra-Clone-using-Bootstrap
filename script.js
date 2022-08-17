@@ -359,7 +359,7 @@ function addToCartt() {
   <div class="t-shirt_price">
   <span><strong>${data.price}</strong></span>
   <span><strike>Rs 700</strike></span>
-  <span style="color: red">(40% off)</span>
+  <span style="color: red">${data.offRate}</span>
     <p style="color: green; margin-bottom: 10px">
     <strong>inclusive of all taxes</strong>
     </p>
