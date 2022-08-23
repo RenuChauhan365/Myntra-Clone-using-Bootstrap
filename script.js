@@ -276,16 +276,12 @@ function onChange() {
   let sortData = document.getElementById("Price").value;
   if (sortData == 0) {
     jsondata.data.sort((a, b) => a.price - b.price)
-    load();
   } else {
-    
      jsondata.data.sort((a, b) => b.price + a.price);
   }
 }
-//  console.log(sortData);
 
 
-// if(sortData==low){}
 let html = `<div class="row">`;
 
 jsondata.data.forEach((item, index) => {
@@ -307,13 +303,10 @@ jsondata.data.forEach((item, index) => {
     </div>
    </div>
     `;
-  //  html = `<div class="row">`
   index += 1;
   html += card;
-  // console.log(index);
   if (index !== 0 && index % 6 === 0) {
     html += `</div><div class="row">`;
-    // console.log("shyam");
   }
 });
 
