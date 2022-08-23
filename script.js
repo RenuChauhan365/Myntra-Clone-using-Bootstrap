@@ -18,9 +18,11 @@ var x = setInterval(function () {
   }
 }, 1000);
 
-
 // Adding in cart =====>
 let shoping_cart = [];
+// let shoping_cart_data = [...new Set(shoping_cart)]
+console.log(shoping_cart);
+
 
 let jsondata = {
   data: [
@@ -269,23 +271,19 @@ let jsondata = {
 
 
 
-function onChange(){
+// filter =======>
+function onChange() {
   let sortData = document.getElementById("Price").value;
-  //  alert("heyshyam")
-  
-  // console.log(sortData);
-  if(sortData=="0"){
-    // console.log("if ", typeof sortData);
-    // alert(sortData);
-    return jsondata.data.sort((a , b)=> a.price - b.price);
-  }else{
+  if (sortData == 0) {
+    jsondata.data.sort((a, b) => a.price - b.price)
+    load();
+  } else {
     
-    // alert(sortData);
-   return jsondata.data.sort((a , b)=> b.price - a.price);
-
-}
+     jsondata.data.sort((a, b) => b.price + a.price);
+  }
 }
 //  console.log(sortData);
+
 
 // if(sortData==low){}
 let html = `<div class="row">`;
@@ -328,17 +326,19 @@ const toastLiveExample = document.getElementById("liveToast");
 function addToCart(index) {
   // console.log(index);
   shoping_cart.push(jsondata.data[index]);
-  addToCartt();
 
+  
   // Tosting =======>
   const toast = new bootstrap.Toast(toastLiveExample);
   toast.show();
 }
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
+function show_data(){
+  cart();
+}
 let cart_data = "";
-function addToCartt() {
+function cart() {
   shoping_cart.forEach((data, index) => {
     cart_data += `<div class="flex_Cart_item">
    <div class="t-shirt-image">
