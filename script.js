@@ -274,17 +274,18 @@ let jsondata = {
 // filter =======>
 function onChange() {
   let sortData = document.getElementById("Price").value;
-  if (sortData == 0) {
-    // alert("gfd")
+  if(sortData == 1) {
     jsondata.data.sort((a, b) => a.price - b.price)
-  } else {
-     jsondata.data.sort((a, b) => b.price + a.price);
+    showData()
+  }else{
+    jsondata.data.sort((a, b) => b.price - a.price);
+    showData()
   }
 }
+showData()
 
-
+function showData(){
 let html = `<div class="row">`;
-
 jsondata.data.forEach((item, index) => {
   let card = ` 
   <div class="col-sm-2 ">
@@ -310,8 +311,8 @@ jsondata.data.forEach((item, index) => {
     html += `</div><div class="row">`;
   }
 });
-
 document.getElementById("t-shirt").innerHTML = html;
+}
 
 // console.log(all_data);
 
@@ -320,7 +321,7 @@ const toastLiveExample = document.getElementById("liveToast");
 function addToCart(index) {
   // console.log(index);
   shoping_cart.push(jsondata.data[index]);
-
+  
   
   // Tosting =======>
   const toast = new bootstrap.Toast(toastLiveExample);
@@ -335,25 +336,25 @@ let cart_data = "";
 function cart() {
   shoping_cart.forEach((data, index) => {
     cart_data += `<div class="flex_Cart_item">
-   <div class="t-shirt-image">
-  <img
-  src="${data.url}"
+    <div class="t-shirt-image">
+    <img
+    src="${data.url}"
     alt=""
     />
     </div>
     <div style="margin: 20px 0" class="flex_align">
-  <div class="t-shirt_containt">
-  <h4>${data.Tname}</h4>
-  <p style="margin-bottom: 5px">${data.description}</p>
-  </div>
-  <div class="rating_button">
-  <button>4 | 9.8k Ratings</button>
-  </div>
-  <hr />
-  <div class="t-shirt_price">
-  <span><strong>${data.price}</strong></span>
-  <span><strike>Rs 700</strike></span>
-  <span style="color: red">${data.offRate}</span>
+    <div class="t-shirt_containt">
+    <h4>${data.Tname}</h4>
+    <p style="margin-bottom: 5px">${data.description}</p>
+    </div>
+    <div class="rating_button">
+    <button>4 | 9.8k Ratings</button>
+    </div>
+    <hr />
+    <div class="t-shirt_price">
+    <span><strong>${data.price}</strong></span>
+    <span><strike>Rs 700</strike></span>
+    <span style="color: red">${data.offRate}</span>
     <p style="color: green; margin-bottom: 10px">
     <strong>inclusive of all taxes</strong>
     </p>
@@ -381,6 +382,6 @@ function cart() {
     </div>
     <hr>`;
   });
-
+  
   localStorage.setItem("myData", cart_data);
 }
