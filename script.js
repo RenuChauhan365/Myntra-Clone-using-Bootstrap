@@ -275,6 +275,7 @@ let jsondata = {
 function onChange() {
   let sortData = document.getElementById("Price").value;
   if (sortData == 0) {
+    // alert("gfd")
     jsondata.data.sort((a, b) => a.price - b.price)
   } else {
      jsondata.data.sort((a, b) => b.price + a.price);
