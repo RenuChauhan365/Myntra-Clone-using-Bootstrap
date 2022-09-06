@@ -412,7 +412,7 @@ let search = document.querySelector("#search");
 console.log(search.id);
 
 function searchItem(e){
-  alert("hello")
+  // alert("hello")
 // e.preventDefault()
   let array=jsondata.data.filter((item)=> item.Tname.toLowerCase().includes(search.value.toLowerCase()));
   // console.log(array);
