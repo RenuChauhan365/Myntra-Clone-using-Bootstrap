@@ -410,11 +410,17 @@ function cart() {
 
 let search = document.querySelector("#search");
 console.log(search.id);
-
+invalidSearchItem.style.display = "none"
 function searchItem(e){
+  let invalidSearchItem = document.querySelector('#invalidSearchItem')
   // alert("hello")
 // e.preventDefault()
   let array=jsondata.data.filter((item)=> item.Tname.toLowerCase().includes(search.value.toLowerCase()));
   // console.log(array);
+  if(array.length==0){
+    invalidSearchItem.style.display = "block"
+  }else{
+    invalidSearchItem.style.display = "none"
+  }
   showData(array);
 }
