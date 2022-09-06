@@ -24,6 +24,7 @@ let shoping_cart = [];
 console.log(shoping_cart);
 
 
+
 let jsondata = {
   data: [
     {
@@ -276,17 +277,17 @@ function onChange() {
   let sortData = document.getElementById("Price").value;
   if(sortData == 1) {
     jsondata.data.sort((a, b) => a.price - b.price)
-    showData()
+    showData(jsondata.data)
   }else{
     jsondata.data.sort((a, b) => b.price - a.price);
-    showData()
+    showData(jsondata.data)
   }
 }
-showData()
+showData(jsondata.data)
 
-function showData(){
+function showData(data){
 let html = `<div class="row">`;
-jsondata.data.forEach((item, index) => {
+data.forEach((item, index) => {
   let card = ` 
   <div class="col-sm-2 ">
     <div class="card" style="width: 200px; height: 440px" >
@@ -307,8 +308,10 @@ jsondata.data.forEach((item, index) => {
     `;
   index += 1;
   html += card;
-  if (index !== 0 && index % 6 === 0) {
+  let val = 1
+  if (index !== 0 && index % 6 === 0 && index<jsondata.data.length) {
     html += `</div><div class="row">`;
+    val++;
   }
 });
 document.getElementById("t-shirt").innerHTML = html;
@@ -384,4 +387,15 @@ function cart() {
   });
   
   localStorage.setItem("myData", cart_data);
+}
+
+let search = document.querySelector("#search");
+console.log(search.id);
+
+function searchItem(e){
+  // alert("hello")
+// e.preventDefault()
+  let array=jsondata.data.filter((item)=> item.Tname.toLowerCase().includes(search.value.toLowerCase()));
+  console.log(array);
+  showData(array);
 }
