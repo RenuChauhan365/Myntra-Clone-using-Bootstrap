@@ -57,16 +57,13 @@
               <a class="nav-link" href="#">BEAUTY</a>
             </li>
           </ul>
-          <div class="d-flex me-4" role="search">
-            <input
-            oninput="searchItem()"
-            id="search"
-              type="search"
-              placeholder="  &#xF002;      Search for products and brand more"
-              style="font-family: Arial, FontAwesome"
-              aria-label="Search"
-            />
-          </div>
+          
+
+            <div class="input-group flex-nowrap" style="margin-right:10px;">
+              <span class="input-group-text" id="addon-wrapping">&#xF52A;</span>
+              <input oninput="searchItem()" id="search" type="text" class="form-control input-lg" placeholder="Search Items" aria-label="Username" aria-describedby="addon-wrapping">
+            </div>
+
           <ul class="navbar-nav me-1 mb-lg-0">
             <li>
               <div class="profile_logo me-4">
@@ -154,7 +151,7 @@
         </div>
       </div>
 
-      <h4 id="invalidSearchItem" style="text-align:center;margin:15px 0;background-color: red; ">** Please Enter Valid T-Shirt Name **</h4>
+      <h5 id="invalidSearchItem" style="text-align:center;margin:15px 0;background-color: red; ">** Please Enter Valid T-Shirt Name **</h5>
       <div class="all-tshirt" id="t-shirt">
         <!-- <div class="tshirt_items">
           <div class="t-shirt_image">
