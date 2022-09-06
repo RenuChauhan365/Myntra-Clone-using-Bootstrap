@@ -389,6 +389,8 @@ function cart() {
   localStorage.setItem("myData", cart_data);
 }
 
+//Searching ==================>
+
 let search = document.querySelector("#search");
 console.log(search.id);
 
