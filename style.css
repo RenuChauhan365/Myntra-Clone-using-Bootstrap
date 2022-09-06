@@ -153,24 +153,14 @@ li a:hover {
   margin-bottom: -2px;
 }
 .all-tshirt {
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 15px 5px;
+  margin: 15px 25px;
 }
 
 .t-shirt_image{
   position: relative;
   width: 100%;
 }
-.all-tshirt img{
-  /* width: 200px;
-  height: 250px;
-  margin-bottom: 10px; */
-  
-}
+
 .row{
   margin-bottom: 20px;
 }
@@ -292,11 +282,7 @@ border-radius: 50px;
     text-decoration: none;
     color: black;
   }
-.all-tshirt{
-  display: flex;
 
-
-}
 
   .tshirt_items{
     margin-bottom: 24px;

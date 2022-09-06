@@ -179,6 +179,23 @@ let jsondata = {
       actualPrice: 699,
       offRate: 60 + "% off",
     },
+    
+    {
+      url: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16517636/2021/12/14/8ae69866-e6c2-41a2-a6f6-5bcefedb40c21639494203298THEMILLIONCLUBMenGreenPoloCollarAppliqueT-shirt1.jpg",
+      Tname: "Roadster",
+      description: "Versity cotton t-shirt",
+      price: 279,
+      actualPrice: 699,
+      offRate: 60 + "% off",
+    },
+    {
+      url: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16517636/2021/12/14/8ae69866-e6c2-41a2-a6f6-5bcefedb40c21639494203298THEMILLIONCLUBMenGreenPoloCollarAppliqueT-shirt1.jpg",
+      Tname: "Roadster",
+      description: "Versity cotton t-shirt",
+      price: 279,
+      actualPrice: 699,
+      offRate: 60 + "% off",
+    },
     {
       url: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/17605686/2022/4/25/8b886997-4f7a-4cd6-bd5e-4b6efa44844f1650887052066-Difference-of-Opinion-Men-Tshirts-9201650887051682-1.jpg",
       Tname: "US Polo Assn",
@@ -395,9 +412,9 @@ let search = document.querySelector("#search");
 console.log(search.id);
 
 function searchItem(e){
-  // alert("hello")
+  alert("hello")
 // e.preventDefault()
   let array=jsondata.data.filter((item)=> item.Tname.toLowerCase().includes(search.value.toLowerCase()));
-  console.log(array);
+  // console.log(array);
   showData(array);
 }
