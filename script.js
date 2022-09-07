@@ -325,10 +325,8 @@ data.forEach((item, index) => {
     `;
   index += 1;
   html += card;
-  let val = 1
   if (index !== 0 && index % 6 === 0 && index<jsondata.data.length) {
     html += `</div><div class="row">`;
-    val++;
   }
 });
 document.getElementById("t-shirt").innerHTML = html;
