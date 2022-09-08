@@ -318,14 +318,14 @@ data.forEach((item, index) => {
             <span><strong>Rs ${item.price}</strong></span>
             <span><strike>Rs ${item.actualPrice}</strike></span>
             <span style="color: red">(${item.offRate})</span>
-          
         </div>
     </div>
    </div>
     `;
   index += 1;
   html += card;
-  if (index !== 0 && index % 6 === 0 && index<jsondata.data.length) {
+  // && index<jsondata.data.length
+  if (index % 6 === 0 ) {
     html += `</div><div class="row">`;
   }
 });
