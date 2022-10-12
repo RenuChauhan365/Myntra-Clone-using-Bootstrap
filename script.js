@@ -1,6 +1,6 @@
 // Set the date we're counting down to
 
-var countDownDate = new Date("sep 5,2022  15:37:25").getTime();
+var countDownDate = new Date("sep 5,2023  15:37:25").getTime();
 
 var x = setInterval(function () {
   var now = new Date().getTime();
@@ -303,7 +303,7 @@ function onChange() {
 showData(jsondata.data)
 
 function showData(data){
-let html = `<div class="row">`;
+let html = `<div class="row">`
 data.forEach((item, index) => {
   let card = ` 
   <div class="col-sm-2 ">
@@ -324,9 +324,9 @@ data.forEach((item, index) => {
     `;
   index += 1;
   html += card;
-  // && index<jsondata.data.length
+
   if (index % 6 === 0 ) {
-    html += `</div><div class="row">`;
+    html += `</div><div class="row">`
   }
 });
 document.getElementById("t-shirt").innerHTML = html;
@@ -407,12 +407,11 @@ function cart() {
 //Searching ==================>
 
 let search = document.querySelector("#search");
-console.log(search.id);
-invalidSearchItem.style.display = "none"
+// console.log(search.id);
+invalidSearchItem.style.display = "none";
 function searchItem(e){
-  let invalidSearchItem = document.querySelector('#invalidSearchItem')
-  // alert("hello")
-// e.preventDefault()
+  let invalidSearchItem = document.querySelector('#invalidSearchItem');
+
   let array=jsondata.data.filter((item)=> item.Tname.toLowerCase().includes(search.value.toLowerCase()));
   // console.log(array);
   if(array.length==0){
