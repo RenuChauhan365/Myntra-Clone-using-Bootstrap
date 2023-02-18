@@ -17,6 +17,7 @@ body {
 .mobileHeader {
   display: none;
 }
+
 .myntra_logo img {
   width: 100px;
   height: auto;
@@ -30,15 +31,17 @@ nav {
   /* position: fixed; */
   margin: 0px 50px;
 }
+
 .nav-item a {
   color: black;
   font-weight: 500;
 }
+
 .d-flex input {
   width: 500px;
   height: 40px;
   /* border: none;
-        border */
+          border */
   border: 1px solid;
   border-color: rgb(216, 216, 216);
   /* font-size: small; */
@@ -48,21 +51,25 @@ li {
   /* position: fixed; */
   position: sticky;
 }
+
 li a:hover {
   /* text-decoration: underline; */
   border-bottom: 2px solid red;
 }
- main .sellTime {
+
+main .sellTime {
   background-color: aliceblue;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 60px;
 }
+
 .sellTime p {
   margin-top: 15px;
   color: red;
 }
+
 .dealHeading h2 {
   text-transform: uppercase;
   color: #3e4152;
@@ -72,6 +79,7 @@ li a:hover {
   max-height: 5em;
   font-weight: 500;
 }
+
 .deal-of-the-day-Card {
   display: flex;
   flex-direction: column;
@@ -79,113 +87,131 @@ li a:hover {
   margin: auto 5px;
   background-color: white;
 }
+
 .deal-of-the-day-Card img {
   width: 95%;
   height: auto;
   margin: 5px 2px 0px 0px;
 }
+
 .firstRow {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
 }
+
 .secondRow {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
   margin-top: 10px;
 }
+
 .TopPics {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
 }
+
 .TopPics img {
   width: 100%;
   height: auto;
   /* margin: 0px 0px 0px 0px; */
 }
+
 .topPics-Card {
   margin-left: 5px;
 }
 
-.footer{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 30px 0px;
-    color: white;
-    background-color: black;
-    /* margin: 0 5px; */
-}
-.footer p{
-    margin-bottom:.5px;
-    color: white;
-}
-.footer p , h6{
-    margin-left:  5px;
-}
-.stickers img{
-    width: 130px;
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 0px;
+  color: white;
+  background-color: black;
+  /* margin: 0 5px; */
 }
 
-.mobileApp h4{
-    margin: 20px 0;
+.footer p {
+  margin-bottom: .5px;
+  color: white;
 }
-.social_icon img{
-    width: 30px;
-    margin: 0 5px;
+
+.footer p,
+h6 {
+  margin-left: 5px;
+}
+
+.stickers img {
+  width: 130px;
+}
+
+.mobileApp h4 {
+  margin: 20px 0;
+}
+
+.social_icon img {
+  width: 30px;
+  margin: 0 5px;
 
 }
-.reserveRights{
-    background-color: rgb(23, 23, 23);
-    padding: 20px 0%;
-    color: white;
-    text-align: center;
+
+.reserveRights {
+  background-color: rgb(23, 23, 23);
+  padding: 20px 0%;
+  color: white;
+  text-align: center;
 }
 
 /* T- Shirt collection page style ==========> */
 
-.size_price_filtering{
+.size_price_filtering {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 
 }
-.t_shirt_discription{
+
+.t_shirt_discription {
   text-align: center;
 }
-.all-tshirt h6 , p , .t-shirt_price{
+
+.all-tshirt h6,
+p,
+.t-shirt_price {
   margin-bottom: -2px;
 }
+
 .all-tshirt {
   margin: 15px 25px;
 }
 
-.t-shirt_image{
+.t-shirt_image {
   position: relative;
   width: 100%;
 }
 
-.row{
+.row {
   margin-bottom: 20px;
 }
-#layer{
+
+#layer {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   color: black;
-  background-color:transparent;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   opacity: 0%;
   z-index: 10;
 }
 
-#layer:hover{
+#layer:hover {
   /* background: rgba(211, 0, 0, 0.2); */
   opacity: 100%;
   transition: 1s;
@@ -194,21 +220,23 @@ li a:hover {
 /* CART STYLING =========> */
 
 
-.t-shirt-image img{
+.t-shirt-image img {
   margin: 20px 8px;
   width: 250px;
 }
-.add_to_bag button{
-padding: 5px 10px;
-background-color: rgb(245, 93, 93);
-margin-top: 20px;
-border: none;
-margin-right: 5px;
+
+.add_to_bag button {
+  padding: 5px 10px;
+  background-color: rgb(245, 93, 93);
+  margin-top: 20px;
+  border: none;
+  margin-right: 5px;
 }
+
 /* .size button{
-padding: 5px;
-border-radius: 50px;
-} */
+  padding: 5px;
+  border-radius: 50px;
+  } */
 
 .size button {
   margin: 10px 5px 10px 0;
@@ -225,15 +253,16 @@ border-radius: 50px;
   margin: 5px;
 }
 
-.flex_Cart_item{
+.flex_Cart_item {
   display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.card{
+.card {
   height: 300px;
 }
+
 /* MEDIA QUARY =====> */
 
 
@@ -243,6 +272,7 @@ border-radius: 50px;
     justify-content: center;
     flex-wrap: wrap;
   }
+
   .secondRow {
     display: flex;
     justify-content: center;
@@ -252,19 +282,22 @@ border-radius: 50px;
   .TopPics {
     display: flex;
   }
+
   .navbar-nav {
     display: flex;
     flex-direction: row;
   }
-  
+
   .TopPics img {
     width: 100%;
     height: auto;
-   
+
   }
+
   .navbar {
     display: none;
   }
+
   .mobileHeader {
     display: flex;
     justify-content: space-between;
@@ -273,15 +306,18 @@ border-radius: 50px;
     color: rgb(14, 10, 10);
     align-items: center;
   }
+
   .logo img {
     width: 100px;
   }
+
   .content {
     padding: 0 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
+
   .content a {
     margin-left: 20px;
     text-decoration: none;
@@ -289,172 +325,217 @@ border-radius: 50px;
   }
 
 
-  .tshirt_items{
+  .tshirt_items {
     margin-bottom: 24px;
-   
+
 
   }
+
   .profile_logo img {
     width: 20px;
   }
+
   .bell img {
     width: 25px;
     margin-top: 8px;
   }
+
   .deal-of-the-day-Card img {
     width: 267px;
   }
-  .TopPics img{
+
+  .TopPics img {
     width: 267px;
   }
 }
 
 @media only screen and (max-width: 769px) {
-    .deal-of-the-day-Card img {
-        width: 248px;
-      }
-      .TopPics{
-        display: flex;
-        flex-wrap: wrap;
-      }
-      .TopPics img{
-        width: 248px;
-      }
+  .deal-of-the-day-Card img {
+    width: 248px;
+  }
+
+  .TopPics {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .TopPics img {
+    width: 248px;
+  }
 }
+
 @media only screen and (max-width: 540px) {
-    .mobileApp h4{
-        font-size: medium;
-    }
-    .social_icon img{
-        width: 20px;
-        height: auto;
-    }
-    .deal-of-the-day-Card img{
-        width: 260px;
-    }
-    .stickers img{
-        width: 100px;
-    }
-    .TopPics img{
-        width: 260px;
-      }
-      .dealHeading h2{
-        font-size:medium;
-      }
+  .mobileApp h4 {
+    font-size: medium;
+  }
+
+  .social_icon img {
+    width: 20px;
+    height: auto;
+  }
+
+  .deal-of-the-day-Card img {
+    width: 260px;
+  }
+
+  .stickers img {
+    width: 100px;
+  }
+
+  .TopPics img {
+    width: 260px;
+  }
+
+  .dealHeading h2 {
+    font-size: medium;
+  }
 }
+
 @media only screen and (max-width: 520px) {
-    .mobileApp h4{
-        font-size: medium;
-    }
-    .social_icon img{
-        width: 20px;
-        height: auto;
-    }
+  .mobileApp h4 {
+    font-size: medium;
+  }
+
+  .social_icon img {
+    width: 20px;
+    height: auto;
+  }
+
   .carousel-inner img {
     width: auto;
     height: 200px;
   }
+
   .deal-of-the-day-Card img {
     width: 196px;
   }
-  .TopPics img{
+
+  .TopPics img {
     width: 196px;
   }
-  .dealHeading h2{
-    font-size:medium;
+
+  .dealHeading h2 {
+    font-size: medium;
   }
-  .stickers img{
+
+  .stickers img {
     width: 100px;
 
+  }
+
+  .card {
+    width: auto;
+  }
+
+  #layer {
+    opacity: 100%;
+  }
 }
-.card{
-  width: auto;
-}
-#layer{
-  opacity: 100%;
-}
-}
+
 @media only screen and (max-width: 395px) {
-    .mobileApp h4{
-        font-size: medium;
-    }
-    .social_icon img{
-        width: 20px;
-        height: auto;
-    }
-    .dealHeading h2{
-        font-size:medium;
-      }
-    .deal-of-the-day-Card img {
-      width: 186px;
-    }
-    .TopPics img{
-        width: 186px;
-      }
-      .stickers img{
-        width: 100px;
-    }
+  .mobileApp h4 {
+    font-size: medium;
   }
-  @media only screen and (max-width: 376px) {
-    .mobileApp h4{
-        font-size: medium;
-    }
-    .social_icon img{
-        width: 20px;
-        height: auto;
-    }
-    .dealHeading h2{
-        font-size:medium;
-      }
-    .deal-of-the-day-Card img {
-      width: 180px;
-    }
-    .TopPics img{
-        width: 180px;
-    }
-    .stickers img{
-        width: 100px;
-    }
+
+  .social_icon img {
+    width: 20px;
+    height: auto;
   }
-  @media only screen and (max-width: 361px) {
-    .mobileApp h4{
-        font-size: medium;
-    }
-    .social_icon img{
-        width: 20px;
-        height: auto;
-    }
-    .dealHeading h2{
-        font-size:medium;
-      }
-    .deal-of-the-day-Card img {
-      width: 172px;
-    }
-    .TopPics img{
-        width: 172px;
-      }
-      .stickers img{
-        width: 100px;
-    }
+
+  .dealHeading h2 {
+    font-size: medium;
   }
-  @media only screen and (max-width: 300px) {
-    .mobileApp h4{
-        font-size: medium;
-    }
-    .social_icon img{
-        width: 20px;
-        height: auto;
-    }
-.deal-of-the-day-Card img{
-    width: 250px;
-}
-.TopPics img{
-    width: 250px;
+
+  .deal-of-the-day-Card img {
+    width: 186px;
   }
-  .dealHeading h2{
-    font-size:medium;
+
+  .TopPics img {
+    width: 186px;
   }
-  .stickers img{
+
+  .stickers img {
     width: 100px;
-}
   }
+}
+
+@media only screen and (max-width: 376px) {
+  .mobileApp h4 {
+    font-size: medium;
+  }
+
+  .social_icon img {
+    width: 20px;
+    height: auto;
+  }
+
+  .dealHeading h2 {
+    font-size: medium;
+  }
+
+  .deal-of-the-day-Card img {
+    width: 180px;
+  }
+
+  .TopPics img {
+    width: 180px;
+  }
+
+  .stickers img {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 361px) {
+  .mobileApp h4 {
+    font-size: medium;
+  }
+
+  .social_icon img {
+    width: 20px;
+    height: auto;
+  }
+
+  .dealHeading h2 {
+    font-size: medium;
+  }
+
+  .deal-of-the-day-Card img {
+    width: 172px;
+  }
+
+  .TopPics img {
+    width: 172px;
+  }
+
+  .stickers img {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .mobileApp h4 {
+    font-size: medium;
+  }
+
+  .social_icon img {
+    width: 20px;
+    height: auto;
+  }
+
+  .deal-of-the-day-Card img {
+    width: 250px;
+  }
+
+  .TopPics img {
+    width: 250px;
+  }
+
+  .dealHeading h2 {
+    font-size: medium;
+  }
+
+  .stickers img {
+    width: 100px;
+  }
+}
